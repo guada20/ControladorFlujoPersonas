@@ -26,9 +26,9 @@ public class seccion{
 	public void EliminarP(int cant) {
 	        if (PersonasAhora - cant >= 0) {
 	            PersonasAhora -= cant;
-	            System.out.println(cant + " personas removidas de " + nombre);
+	            System.out.println(cant + " personas eliminadas de " + nombre);
 	        } else {
-	            System.out.println("No se pueden remover tantas personas de " + nombre);
+	            System.out.println("No se pueden eliminar tantas personas de " + nombre);
 	        }
 	}
 	   

@@ -53,7 +53,7 @@ public static void gestionarSeccion(seccion seccion, int CapacidadPersonas) {
 	        if (CapacidadPersonas >= 0) {
 	            seccion.agregarP(CapacidadPersonas);
 	        } else {
-	            seccion.agregarP(Math.abs(CapacidadPersonas));
+	            seccion.EliminarP(Math.abs(CapacidadPersonas));
 	        }
 }
 }
