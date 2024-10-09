@@ -6,7 +6,7 @@ public class Oficina extends seccion {
     }
 }
 
- class SalaReunion extends seccion {
+class SalaReunion extends seccion {
     public SalaReunion() {
         super("Salas de Reunión", 15);
     }

@@ -32,12 +32,17 @@ public class seccion{
 	        }
 	}
 	   
-	
+	public void gestionarSeccion(int CapacidadPersonas) {
+        if (CapacidadPersonas >= 0) {
+            agregarP(CapacidadPersonas);
+        } else {
+            EliminarP(Math.abs(CapacidadPersonas));
+        }
+    }
+
 	 public void Ocupacion() {
 	        System.out.println(nombre + ": " + PersonasAhora+ "/" + CapacidadPersonas + " personas.");
 	    
 	 }
-
-	 
 
 }

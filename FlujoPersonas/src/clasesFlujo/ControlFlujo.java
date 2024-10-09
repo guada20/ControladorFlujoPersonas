@@ -1,6 +1,7 @@
 package clasesFlujo;
 import java.util.Scanner;
 
+
 public class ControlFlujo {
    
 	
@@ -28,32 +29,25 @@ public class ControlFlujo {
 	          System.out.println("Ingrese la cantidad de personas a agregar o eliminar (número negativo para eliminar):");
 	           int CapacidadPersonas = scanner.nextInt();
 	           
-	           switch (opcion){
-               case 1:
-                   gestionarSeccion(oficina, CapacidadPersonas);
-                   break;
-               case 2:
-                   gestionarSeccion(salaReunion, CapacidadPersonas);
-                   break;
-               case 3:
-                   gestionarSeccion(cafeteria, CapacidadPersonas);
-                   break;
-               default:
-                   System.out.println("Opción no válida.");
-	      }
-	           oficina.Ocupacion();
-	           salaReunion.Ocupacion();
-	           cafeteria.Ocupacion();
-	}
-	
-	      scanner.close();
-}
-	
-public static void gestionarSeccion(seccion seccion, int CapacidadPersonas) {
-	        if (CapacidadPersonas >= 0) {
-	            seccion.agregarP(CapacidadPersonas);
-	        } else {
-	            seccion.EliminarP(Math.abs(CapacidadPersonas));
-	        }
-}
+			   switch (opcion) {
+                case 1:
+                    oficina.gestionarSeccion(CapacidadPersonas);
+                    break;
+                case 2:
+                    salaReunion.gestionarSeccion(CapacidadPersonas);
+                    break;
+                case 3:
+                    cafeteria.gestionarSeccion(CapacidadPersonas);
+                    break;
+                default:
+                    System.out.println("Opción no válida.");
+            }
+
+            oficina.Ocupacion();
+            salaReunion.Ocupacion();
+            cafeteria.Ocupacion();
+        }
+
+        scanner.close();
+    }
 }
