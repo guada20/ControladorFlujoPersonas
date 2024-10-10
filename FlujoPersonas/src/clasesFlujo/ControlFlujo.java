@@ -34,7 +34,7 @@ public class ControlFlujo {
                     oficina.gestionarSeccion(CapacidadPersonas);
                     break;
                 case 2:
-                    salaReunion.gestionarSeccion(CapacidadPersonas);
+				    salaReunion.gestionarSeccion(CapacidadPersonas);
                     break;
                 case 3:
                     cafeteria.gestionarSeccion(CapacidadPersonas);
